@@ -10,13 +10,14 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="git_muleFlow" doc:id="78de8131-a5fc-4498-9880-37edd037bd04" >
 		<http:listener doc:name="Listener" doc:id="45c3a263-94e8-4e82-93b5-97beecf9fa9c" config-ref="HTTP_Listener_config" path="/test"/>
+		<logger level="INFO" doc:name="Logger" doc:id="87794505-69cf-4317-a024-6a5b06cd230b" message="dummy sxsxsa"/>
 		<ee:transform doc:name="Transform Message" doc:id="b4eb84e6-4498-413f-b9a2-cca18d34db75" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	"hello world":"he"
+	"hello world":"hejhvgcfvdrvdurdvtrvdtrd"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
